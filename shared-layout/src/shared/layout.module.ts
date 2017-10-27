@@ -3,9 +3,12 @@
 
 import { NgModule } from '@angular/core';
 import { LayoutComponent } from "./layout.component";
+import { LayoutRoutingModule } from "./layout-routing.module";
 
 @NgModule({
-    imports: [],
+    imports: [
+        LayoutRoutingModule
+    ],
     exports: [
         LayoutComponent
     ],
@@ -15,3 +18,6 @@ import { LayoutComponent } from "./layout.component";
     providers: [],
 })
 export class LayoutModule { }
+
+
+
